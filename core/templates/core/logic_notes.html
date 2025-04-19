@@ -1,0 +1,93 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Logic and Modelling{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>📘 Logic and Modelling</h1>
+  <p>Master the art of logic — propositional, predicate, and modal — with coding in Lean and deep proof skills.</p>
+
+  <h2>📌 Grading Breakdown</h2>
+  <table class="grading-table">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Weight</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Final Exam</td>
+        <td>100%</td>
+        <td>Open book (slides + printed notes allowed)</td>
+      </tr>
+      <tr>
+        <td>Bonus (HW)</td>
+        <td>+0.5</td>
+        <td>Earned by completing all tasks in 3 Lean assignments</td>
+      </tr>
+      <tr>
+        <td>Homework</td>
+        <td>❗ Required</td>
+        <td>Must pass all 3 (50% of tasks minimum) to qualify for exam/resit</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🗓 Homework Plan (Lean Coding Assignments)</h2>
+  <table class="grading-table">
+    <thead>
+      <tr>
+        <th>Assignment</th>
+        <th>Topic</th>
+        <th>Due Date</th>
+        <th>Goal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Assignment 1</strong></td>
+        <td>Propositional Logic</td>
+        <td>April 27</td>
+        <td>✅ Pass ≥50%, aim for 100% for bonus</td>
+      </tr>
+      <tr>
+        <td><strong>Assignment 2</strong></td>
+        <td>Predicate Logic</td>
+        <td>May 11</td>
+        <td>✅ Pass ≥50%, aim for 100% for bonus</td>
+      </tr>
+      <tr>
+        <td><strong>Assignment 3</strong></td>
+        <td>Equality + Relations</td>
+        <td>May 25</td>
+        <td>✅ Pass ≥50%, aim for 100% for bonus</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="note">
+    ✅ To pass: complete at least <strong>50%</strong> of each assignment<br>
+    🎯 To earn bonus: complete <strong>all tasks</strong> in each assignment
+  </p>
+
+  <h2>📚 Final Exam Preparation</h2>
+  <ul class="clean-list">
+    <li>Fully open book → organize your materials</li>
+  </ul>
+
+  <h2 style="margin-top: 3rem;">📘 Topics Overview</h2>
+  <div class="course-grid" style="margin-top: 1.5rem;">
+    <div class="card">🧠 Introduction to Propositional Logic</div>
+    <div class="card">➡️ Truth Tables & Logical Equivalence</div>
+    <div class="card">🛠️ Deductive Systems & Natural Deduction</div>
+    <div class="card">🔁 Predicate Logic & Quantifiers</div>
+    <div class="card">🔎 Validity, Soundness & Completeness</div>
+    <div class="card">🧩 Modal Logic Basics</div>
+    <div class="card">📚 Application Examples</div>
+  </div>
+
+  <a class="back-card" href="{% url 'period' year=2 period=5 %}">Back to Period 5</a>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% block title %}Period {{ period }} – Year {{ year }} | CS Hub{% endblock %}
+
+{% block content %}
+  <h1>📚 Period {{ period }} – Year {{ year }}</h1>
+  <p>Explore each course for notes, practice questions, and exam prep.</p>
+
+  <div class="kanban">
+    {% for section in sections %}
+      <div class="column fixed">
+        <h2>{{ section.name }}</h2>
+        {% if section.notes_url %}
+          <a class="card" href="{{ section.notes_url }}">📝 Notes</a>
+        {% endif %}
+        {% if section.practice_url %}
+          <a class="card" href="{{ section.practice_url }}">📊 Practice</a>
+        {% endif %}
+        {% if section.exam_url %}
+          <a class="card" href="{{ section.exam_url }}">🧠 Exam Prep</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div style="margin-top: 3rem;">
+    <a class="card" style="display:inline-block; width:auto; padding: 0.5rem 1.25rem;" href="{% url 'home' %}">Back to Home</a>
+  </div>
+{% endblock %}

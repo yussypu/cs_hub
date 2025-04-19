@@ -1,0 +1,66 @@
+:root {
+    --bg: #ffffff;
+    --text: #111827;
+    --card: #f3f4f6;
+  }
+  
+  .dark {
+    --bg: #111827;
+    --text: #f3f4f6;
+    --card: #1f2937;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Patrick Hand', cursive;
+    padding: 2rem;
+    line-height: 2;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .note-container {
+    max-width: 750px;
+    margin: auto;
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
+  .back-button:hover {
+    background: #60a5fa;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: var(--text);
+    opacity: 0.85;
+    margin-top: -0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .back-card {
+    display: inline-block;
+    max-width: 240px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,81 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Databases{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>🗄️ Databases</h1>
+  <p>Study the fundamentals of data systems, queries, and digital exam strategies.</p>
+
+  <h2>📚 Course Structure</h2>
+  <ul class="clean-list">
+    <li><strong>Lectures:</strong> Pre-recorded videos + matching slides</li>
+    <li><strong>Reading:</strong> Book chapters aligned with lectures</li>
+    <li><strong>Exercises:</strong> Optional (solutions posted — attempt before checking)</li>
+    <li><strong>Homework:</strong> Mandatory iSubmit assignments</li>
+    <li><strong>Exam:</strong> Digital, closed-book (via iSubmit) with 2–3 attempts per task</li>
+  </ul>
+
+  <h2>🎯 Grading</h2>
+  <table class="grading-table">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Weight</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>iSubmit Homework</td>
+        <td>❗ Mandatory</td>
+        <td>≥70% to qualify for exam + resit</td>
+      </tr>
+      <tr>
+        <td>Bonus</td>
+        <td>+0.5 to exam grade</td>
+        <td>If ≥90% HW points (≥75 pts)</td>
+      </tr>
+      <tr>
+        <td>Final Exam</td>
+        <td>100%</td>
+        <td>Digital, iSubmit-based, partial credit given</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">🧠 <strong>You must pass the final exam to get bonus points.</strong></p>
+
+  <h2>🗂 Homework Strategy (iSubmit)</h2>
+  <ul class="clean-list">
+    <li>📌 Homework is released and submitted via: <a href="https://isubmit.endrullis.de" target="_blank">iSubmit</a></li>
+    <li>🧠 Practice carefully — exam questions are based on these</li>
+    <li>✅ Save work often + read feedback immediately</li>
+    <li>💡 Focus on understanding <strong>why answers are correct</strong>, not just passing</li>
+  </ul>
+
+  <h2>🧠 Exam Strategy</h2>
+  <ul class="clean-list">
+    <li>Based heavily on HW, but also includes:
+      <ul>
+        <li>New multiple choice + open theory questions</li>
+        <li>DB theory, query formulation, algorithms (joins, indexing, etc.)</li>
+      </ul>
+    </li>
+    <li>You get <strong>2–3 attempts per task</strong>, use them wisely</li>
+    <li>Full exam simulation available under Canvas → “Exercise exam”</li>
+  </ul>
+
+  <h2 style="margin-top: 3rem;">📘 Topics Overview</h2>
+  <div class="course-grid" style="margin-top: 1.5rem;">
+    <a href="{% url 'databases_intro' %}" class="card">📖 Introduction</a>
+    <div class="card">🧱 Relational Model</div>
+    <div class="card">🗂️ Data Modelling</div>
+    <div class="card">🔄 Translating Conceptual to Relational Models</div>
+    <div class="card">🧠 Advanced SQL</div>
+    <div class="card">🧮 Functional Dependencies & Normalization</div>
+    <div class="card">⚙️ Transactions</div>
+  </div>
+
+  <a class="back-card" href="{% url 'period' year=2 period=5 %}">Back to Period 5</a>
+</div>
+{% endblock %}

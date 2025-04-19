@@ -1,0 +1,84 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Welcome to CS Hub{% endblock %}
+
+{% block content %}
+<h1>🎓 Welcome to CS Hub</h1>
+<p>Your all-in-one study hub for the entire Computer Science Bachelor's at VU.</p>
+
+<div class="kanban">
+  {% for year in "123" %}
+    <div class="column fixed">
+      <h2>Year {{ year }}</h2>
+      {% for period in "123456" %}
+        <a href="{% url 'period' year=year|add:'0'|slice:'1:' period=period %}" class="card">
+          Period {{ period }}
+
+          {% if year == "1" and period == "1" %}
+            <div class="course-preview">CP</div>
+            <div class="course-preview">Logic and Sets</div>
+           {% endif %}
+
+           {% if year == "1" and period == "2" %}
+            <div class="course-preview">DSA</div>
+            <div class="course-preview">Pervasive Computing</div>
+           {% endif %}
+
+           {% if year == "1" and period == "3" %}
+            <div class="course-preview">Web Tech</div>
+           {% endif %}
+
+           {% if year == "1" and period == "4" %}
+            <div class="course-preview">Computer Organisation</div>
+            <div class="course-preview">Requirements Engineering</div>
+           {% endif %}
+
+           {% if year == "1" and period == "5" %}
+            <div class="course-preview">Computer Networks</div>
+            <div class="course-preview">Discrete Math and Calculus</div>
+           {% endif %}
+
+           {% if year == "1" and period == "6" %}
+            <div class="course-preview">Systems Project</div>
+           {% endif %}
+
+
+
+           {% if year == "2" and period == "1" %}
+            <div class="course-preview">OOFP</div>
+            <div class="course-preview">Statistical Methods</div>
+           {% endif %}
+
+           {% if year == "2" and period == "2" %}
+            <div class="course-preview">OS</div>
+            <div class="course-preview">Networks and Graphs</div>
+           {% endif %}
+
+           {% if year == "2" and period == "3" %}
+            <div class="course-preview">History of Science</div>
+           {% endif %}
+
+           {% if year == "2" and period == "4" %}
+            <div class="course-preview">Computer Organisation</div>
+            <div class="course-preview">Requirements Engineering</div>
+           {% endif %}
+
+           {% if year == "2" and period == "5" %}
+            <div class="course-preview">Machine Learning</div>
+            <div class="course-preview">Software Design</div>
+            <div class="course-preview">Linear Algebra</div>
+           {% endif %}
+
+           {% if year == "2" and period == "6" %}
+            <div class="course-preview">HCI</div>
+            <div class="course-preview">Software Engineering Processes</div>
+            <div class="course-preview">Security and Safety Engineering</div>
+           {% endif %}
+
+
+        </a>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
