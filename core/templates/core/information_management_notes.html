@@ -1,0 +1,112 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Information Management{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>🧠 Information Management</h1>
+  <p>Master strategic IS theory and business process modeling with Petri nets.</p>
+
+  <h2>📚 Course Focus</h2>
+  <ul class="clean-list">
+    <li>Understand the <strong>strategic role</strong> of Information Systems (IS)</li>
+    <li>Learn how IS supports and transforms organizations</li>
+    <li>Model business processes using <strong>Petri nets</strong></li>
+    <li>Analyze workflows, reachability, and behavior through formal techniques</li>
+  </ul>
+
+  <h2>📝 Grading Structure</h2>
+  <table class="grading-table">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Weight</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Intermediate Exam</td>
+        <td>40%</td>
+        <td>On strategic IS (Lectures 1–4) — must score ≥5.5</td>
+      </tr>
+      <tr>
+        <td>Group Project</td>
+        <td>60%</td>
+        <td>Petri net modeling — must score ≥5.5</td>
+      </tr>
+      <tr>
+        <td>Final Exam</td>
+        <td>Pass/Fail</td>
+        <td>Based on Lectures 5–8 and seminars</td>
+      </tr>
+      <tr>
+        <td>Pass/Fail Assignments</td>
+        <td>Mandatory</td>
+        <td>3 total — all must be passed to complete the course</td>
+      </tr>
+      <tr>
+        <td>Bonus</td>
+        <td>None</td>
+        <td>No additional bonus system</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>📅 Key Deadlines</h2>
+  <table class="grading-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>✅ Midterm Exam</td><td>Apr 22</td></tr>
+      <tr><td>🌀 Project Group Sign-up</td><td>Apr 25 (23:59)</td></tr>
+      <tr><td>📘 Assignment 1</td><td>May 6</td></tr>
+      <tr><td>📘 Assignment 2</td><td>May 13</td></tr>
+      <tr><td>📘 Assignment 3</td><td>May 20</td></tr>
+      <tr><td>📄 Project Report Due</td><td>Jun 1 (23:59)</td></tr>
+      <tr><td>✅ Final Exam</td><td>May 26</td></tr>
+      <tr><td>🔁 Final Exam Resit</td><td>Jul 3</td></tr>
+    </tbody>
+  </table>
+
+  <h2>🛠 Group Project: Deliverables</h2>
+  <ul class="clean-list">
+    <li>Description of selected process</li>
+    <li>Transition system model</li>
+    <li>Petri Net + reachability graph</li>
+    <li>Behavioral analysis + modeling decisions</li>
+    <li>🔁 Feedback via TA in seminars or GitHub Issues</li>
+  </ul>
+
+  <h2>✅ Self-Study Tips</h2>
+  <ul class="clean-list">
+    <li>🔍 Use textbooks for foundational theory</li>
+    <li>✍️ Draw Petri net examples weekly (from scratch)</li>
+    <li>🎯 Prepare mini-summaries after each lecture</li>
+    <li>👥 Document each project version clearly</li>
+    <li>🧠 For final exam: build 1-pagers for Lectures 5–8 + Petri net cheatsheet</li>
+  </ul>
+
+  <a class="back-card" href="{% url 'period' year=2 period=5 %}">Back to Period 5</a>
+</div>
+
+<h2 style="margin-top: 3rem;">📘 Topics Overview</h2>
+<div class="course-grid" style="margin-top: 1.5rem;">
+  <a href="{% url 'info_management_information_systems' %}" class="card">🧠 Information Systems</a>
+  <div class="card">🏛 Information Systems and the Internet</div>
+  <div class="card">📈 Information Systems Development</div>
+  <div class="card">⚖️ Transition Systems</div>
+  <div class="card">🔁 Petri Nets</div>
+  <div class="card">🔄 Workflow Nets and Analysis</div>
+  <div class="card">🧠 Real life Petri nets</div>
+</div>
+
+<a class="back-card" href="{% url 'period' year=2 period=5 %}">Back to Period 5</a>
+
+</div>
+
+{% endblock %}

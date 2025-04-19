@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Information Systems{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>🧠 Information Systems</h1>
+  <p>This page will contain topic-specific notes, diagrams, and resources about the role of Information Systems in organizations.</p>
+
+  <h2>📝 Overview</h2>
+  <ul class="clean-list">
+    <li>What is an Information System?</li>
+    <li>Types of IS (TPS, MIS, DSS, ESS)</li>
+    <li>Strategic vs Operational IS</li>
+    <li>Examples of IS use in real-world organizations</li>
+  </ul>
+
+  <h2>📌 Diagrams and Notes</h2>
+  <p>Add handwritten images or summaries here later...</p>
+
+  <a class="back-card" href="{% url 'info_management_notes' %}">Back to Information Management Notes</a>
+</div>
+{% endblock %}

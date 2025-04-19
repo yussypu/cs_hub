@@ -29,7 +29,7 @@ def period_view(request, year, period):
             },
             {
                 "name": "Information Management",
-                "notes_url": "#",
+                "notes_url": reverse("info_management_notes"),
                 "practice_url": "#",
                 "exam_url": "#"
             },
@@ -51,3 +51,9 @@ def databases_notes(request):
 
 def databases_intro(request):
     return render(request, 'core/databases_intro.html')
+
+def info_management_notes(request):
+    return render(request, 'core/information_management_notes.html')
+
+def info_management_information_systems(request):
+    return render(request, "core/info_management_information_systems.html")

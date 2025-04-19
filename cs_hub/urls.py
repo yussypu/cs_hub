@@ -25,5 +25,7 @@ urlpatterns = [
     path('period/5/logic-notes/', views.logic_notes, name='logic_notes'),
     path('period/5/databases-notes/', views.databases_notes, name='databases_notes'),
     path('period/5/databases/introduction/', views.databases_intro, name='databases_intro'),
+    path('info-management/notes/', views.info_management_notes, name='info_management_notes'),
+    path("info-management/information-systems/", views.info_management_information_systems, name="info_management_information_systems"),
 
 ]
