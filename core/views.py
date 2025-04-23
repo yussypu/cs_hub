@@ -6,6 +6,9 @@ def landing(request):
 def index(request):
     return render(request, 'core/index.html')
 
+def year1_guide(request):
+    return render(request, 'core/year1_guide.html')
+
 def course_matrix(request):
     return render(request, 'core/course_matrix.html')
 

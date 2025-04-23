@@ -21,6 +21,7 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.landing, name='landing'), 
+    path('year1-guide/', views.year1_guide, name='year1_guide'),
     path('matrix/', views.course_matrix, name='course_matrix'),
     path('courses/', views.index, name='home'),
     path('year/<int:year>/period/<int:period>/', views.period_view, name='period'),
