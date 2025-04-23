@@ -4,9 +4,24 @@
 {% block content %}
 <div class="container">
   <h1>CS Hub</h1>
-  <p>All-in-one study hub for the entire Computer Science Bachelors</p>
+  <p>All-in-one academic OS for VU Computer Science students</p>
 
-  <a href="{% url 'home' %}" class="back-card">Explore Courses</a>
+  <div style="margin: 2.5rem 0;">
+
+    <a href="{% url 'home' %}" class="back-card" style="
+      display: block;
+      max-width: 700px;
+      margin: 3rem auto 0 auto;
+      font-size: 1.15rem;
+    ">
+      👜 <strong>Starting Year 1? Click here first</strong> — practical tips that help.
+    </a>
+
+    <a href="{% url 'home' %}" class="back-card" style="margin-right: 1rem;">
+      Explore Courses
+    </a>
+    
+  </div>
 
   <h2 style="margin-top: 4rem;">For CS Students, By a CS Student</h2>
 
@@ -38,5 +53,10 @@
       </div>
     </div>
   </div>
+
+  <p style="margin-top: 3rem; font-size: 0.9rem; color: gray;">
+    Made with ❤️ by Yahya @ VU • Feedback more than welcome.</a>
+  </p>
 </div>
+
 {% endblock %}

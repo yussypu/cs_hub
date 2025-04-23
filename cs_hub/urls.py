@@ -29,5 +29,4 @@ urlpatterns = [
     path('period/5/databases/introduction/', views.databases_intro, name='databases_intro'),
     path('info-management/notes/', views.info_management_notes, name='info_management_notes'),
     path("info-management/information-systems/", views.info_management_information_systems, name="info_management_information_systems"),
-
 ]
