@@ -1,7 +1,13 @@
 from django.shortcuts import render, reverse
 
+def landing(request):
+    return render(request, 'core/landing.html')
+
 def index(request):
     return render(request, 'core/index.html')
+
+def course_matrix(request):
+    return render(request, 'core/course_matrix.html')
 
 def period_view(request, year, period):
     if year == 2 and period == 5:

@@ -7,11 +7,11 @@
   }
   
   .dark body {
-    --bg: #111827;
-    --text: #f3f4f6;
-    --card: #1f2937;
-    --accent: #3b82f6;
-    --accent-hover: #60a5fa;
+    --bg: #0d1117;              /* GitHub dark mode background */
+    --text: #e5e7eb;            /* Light gray, not pure white */
+    --card: #161b22;            /* Subtle contrast for cards */
+    --accent: #3b82f6;          /* Keep blue for CTAs */
+    --accent-hover: #60a5fa;    /* Slightly lighter hover */
   }
   
   * {

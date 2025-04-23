@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% block title %}Course Matrix Overview{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>📅 3-Year CS Course Matrix</h1>
+  <p>High-level overview of all courses in the Bachelor’s program, by year and period.</p>
+
+  <div class="overview">
+    <h2>🎓 Year 1</h2>
+    <ul>
+      <li><strong>Period 1:</strong> Computer Programming, Logic and Sets</li>
+      <li><strong>Period 2:</strong> DSA, Pervasive Computing</li>
+      <li><strong>Period 3:</strong> Web Tech</li>
+      <li><strong>Period 4:</strong> Computer Organisation, Requirements Engineering</li>
+      <li><strong>Period 5:</strong> Networks, Discrete Math & Calculus</li>
+      <li><strong>Period 6:</strong> Systems Programming Project</li>
+    </ul>
+
+    <h2>🧠 Year 2</h2>
+    <ul>
+      <li><strong>Period 1:</strong> OOFP, Statistical Methods</li>
+      <li><strong>Period 2:</strong> Operating Systems, Networks & Graphs</li>
+      <li><strong>Period 3:</strong> History of Science</li>
+      <li><strong>Period 4:</strong> Software Design, Requirements Engineering</li>
+      <li><strong>Period 5:</strong> ML, Linear Algebra, Software Design</li>
+      <li><strong>Period 6:</strong> HCI, Software Engineering Processes, Security</li>
+    </ul>
+
+    <h2>🚀 Year 3</h2>
+    <p>(Coming soon: Minor, Thesis, Electives...)</p>
+  </div>
+
+  <a href="{% url 'landing' %}" class="back-card" style="margin-top: 3rem;">Back to Home</a>
+</div>
+{% endblock %}

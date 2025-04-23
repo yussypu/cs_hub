@@ -4,7 +4,7 @@
 
 {% block content %}
 <h1>🎓 Welcome to CS Hub</h1>
-<p>Your all-in-one study hub for the entire Computer Science Bachelor's at VU.</p>
+<p>Explore courses by year and period</p>
 
 <div class="kanban">
   {% for year in "123" %}
@@ -59,7 +59,7 @@
            {% endif %}
 
            {% if year == "2" and period == "4" %}
-            <div class="course-preview">Computer Organisation</div>
+            <div class="course-preview">Software Design</div>
             <div class="course-preview">Requirements Engineering</div>
            {% endif %}
 
@@ -81,4 +81,7 @@
     </div>
   {% endfor %}
 </div>
+
+<a href="{% url 'landing' %}" class="back-card" style="margin-top: 3rem;">Back to Home</a>
+
 {% endblock %}

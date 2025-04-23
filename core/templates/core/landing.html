@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% block title %}Welcome to CS Hub{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>CS Hub</h1>
+  <p>All-in-one study hub for the entire Computer Science Bachelors</p>
+
+  <a href="{% url 'home' %}" class="back-card">Explore Courses</a>
+
+  <h2 style="margin-top: 4rem;">For CS Students, By a CS Student</h2>
+
+  <div class="kanban" style="margin-top: 2rem;">
+    <div class="column">
+      <div class="card">
+        📅 <br>
+        <strong>3-Year Course Matrix</strong>
+        <p>Explore a year-by-year curriculum overview.</p>
+        <a href="{% url 'course_matrix' %}" class="back-card">Open Matrix</a>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        📘 <br>
+        <strong>In-Depth Notes</strong>
+        <p>Detailed notes & visual summaries per course.</p>
+        <a href="{% url 'logic_notes' %}" class="back-card">View Notes</a>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        🎓 <br>
+        <strong>Exam Preparation</strong>
+        <p>Tips, strategies & practice to ace your exams.</p>
+        <a href="#" class="back-card">Coming Soon</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
